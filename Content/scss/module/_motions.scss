@@ -1,0 +1,248 @@
+// transition
+.section {
+    // opacity: 0; @include transition(all, .7s, cubic-bezier(0.0, 0.0, 0.2, 1));
+}
+
+.highlight:after { width: 0; opacity: 0; @include transition(all, .5s); }
+
+.motion-up-1 { opacity: 0; @include translateY(50px); @include transition(all, .5s); }
+.motion-up-2 { opacity: 0; @include translateY(50px); @include transition(all, .5s); }
+.motion-up-3 { opacity: 0; @include translateY(50px); @include transition(all, .5s); }
+.motion-up-4 { opacity: 0; @include translateY(50px); @include transition(all, .5s); }
+.motion-up-5 { opacity: 0; @include translateY(50px); @include transition(all, .5s); }
+.motion-up-6 { opacity: 0; @include translateY(50px); @include transition(all, .5s); }
+.motion-up-7 { opacity: 0; @include translateY(50px); @include transition(all, .5s); }
+.motion-up-8 { opacity: 0; @include translateY(50px); @include transition(all, .5s); }
+.motion-up-9 { opacity: 0; @include translateY(50px); @include transition(all, .5s); }
+.motion-up-10 { opacity: 0; @include translateY(50px); @include transition(all, .5s); }
+.motion-up-11 { opacity: 0; @include translateY(50px); @include transition(all, .5s); }
+.motion-up-12 { opacity: 0; @include translateY(50px); @include transition(all, .5s); }
+.motion-up-13 { opacity: 0; @include translateY(50px); @include transition(all, .5s); }
+.motion-up-14 { opacity: 0; @include translateY(50px); @include transition(all, .5s); }
+.motion-up-15 { opacity: 0; @include translateY(50px); @include transition(all, .5s); }
+
+.motion-bounce-1 { opacity: 0; @include translateY(50px); @include transition(all, .5s, $how: cubic-bezier(0.18, 0.89, 0.32, 1.28)); }
+.motion-bounce-2 { opacity: 0; @include translateY(50px); @include transition(all, .5s, $how: cubic-bezier(0.18, 0.89, 0.32, 1.28)); }
+.motion-bounce-3 { opacity: 0; @include translateY(50px); @include transition(all, .5s, $how: cubic-bezier(0.18, 0.89, 0.32, 1.28)); }
+.motion-bounce-4 { opacity: 0; @include translateY(50px); @include transition(all, .5s, $how: cubic-bezier(0.18, 0.89, 0.32, 1.28)); }
+.motion-bounce-5 { opacity: 0; @include translateY(50px); @include transition(all, .5s, $how: cubic-bezier(0.18, 0.89, 0.32, 1.28)); }
+.motion-bounce-6 { opacity: 0; @include translateY(50px); @include transition(all, .5s, $how: cubic-bezier(0.18, 0.89, 0.32, 1.28)); }
+.motion-bounce-7 { opacity: 0; @include translateY(50px); @include transition(all, .5s, $how: cubic-bezier(0.18, 0.89, 0.32, 1.28)); }
+.motion-bounce-8 { opacity: 0; @include translateY(50px); @include transition(all, .5s, $how: cubic-bezier(0.18, 0.89, 0.32, 1.28)); }
+.motion-bounce-9 { opacity: 0; @include translateY(50px); @include transition(all, .5s, $how: cubic-bezier(0.18, 0.89, 0.32, 1.28)); }
+.motion-bounce-10 { opacity: 0; @include translateY(50px); @include transition(all, .5s, $how: cubic-bezier(0.18, 0.89, 0.32, 1.28)); }
+.motion-bounce-11 { opacity: 0; @include translateY(50px); @include transition(all, .5s, $how: cubic-bezier(0.18, 0.89, 0.32, 1.28)); }
+.motion-bounce-12 { opacity: 0; @include translateY(50px); @include transition(all, .5s, $how: cubic-bezier(0.18, 0.89, 0.32, 1.28)); }
+.motion-bounce-13 { opacity: 0; @include translateY(50px); @include transition(all, .5s, $how: cubic-bezier(0.18, 0.89, 0.32, 1.28)); }
+.motion-bounce-14 { opacity: 0; @include translateY(50px); @include transition(all, .5s, $how: cubic-bezier(0.18, 0.89, 0.32, 1.28)); }
+.motion-bounce-15 { opacity: 0; @include translateY(50px); @include transition(all, .5s, $how: cubic-bezier(0.18, 0.89, 0.32, 1.28)); }
+
+.motion-scale-1 { opacity: 0; @include scaleXY(.1, 1); @include transition(all, .5s); }
+.motion-scale-2 { opacity: 0; @include scaleXY(.1, 1); @include transition(all, .5s); }
+.motion-scale-3 { opacity: 0; @include scaleXY(.1, 1); @include transition(all, .5s); }
+.motion-scale-4 { opacity: 0; @include scaleXY(.1, 1); @include transition(all, .5s); }
+.motion-scale-5 { opacity: 0; @include scaleXY(.1, 1); @include transition(all, .5s); }
+.motion-scale-6 { opacity: 0; @include scaleXY(.1, 1); @include transition(all, .5s); }
+.motion-scale-7 { opacity: 0; @include scaleXY(.1, 1); @include transition(all, .5s); }
+.motion-scale-8 { opacity: 0; @include scaleXY(.1, 1); @include transition(all, .5s); }
+.motion-scale-9 { opacity: 0; @include scaleXY(.1, 1); @include transition(all, .5s); }
+.motion-scale-10 { opacity: 0; @include scaleXY(.1, 1); @include transition(all, .5s); }
+.motion-scale-11 { opacity: 0; @include scaleXY(.1, 1); @include transition(all, .5s); }
+.motion-scale-12 { opacity: 0; @include scaleXY(.1, 1); @include transition(all, .5s); }
+.motion-scale-13 { opacity: 0; @include scaleXY(.1, 1); @include transition(all, .5s); }
+.motion-scale-14 { opacity: 0; @include scaleXY(.1, 1); @include transition(all, .5s); }
+.motion-scale-15 { opacity: 0; @include scaleXY(.1, 1); @include transition(all, .5s); }
+
+.motion-unfold-x-1 { opacity: 0; @include scaleX(0); @include transition(all, .5s); }
+.motion-unfold-x-2 { opacity: 0; @include scaleX(0); @include transition(all, .5s); }
+.motion-unfold-x-3 { opacity: 0; @include scaleX(0); @include transition(all, .5s); }
+.motion-unfold-x-4 { opacity: 0; @include scaleX(0); @include transition(all, .5s); }
+.motion-unfold-x-5 { opacity: 0; @include scaleX(0); @include transition(all, .5s); }
+.motion-unfold-x-6 { opacity: 0; @include scaleX(0); @include transition(all, .5s); }
+.motion-unfold-x-7 { opacity: 0; @include scaleX(0); @include transition(all, .5s); }
+.motion-unfold-x-8 { opacity: 0; @include scaleX(0); @include transition(all, .5s); }
+.motion-unfold-x-9 { opacity: 0; @include scaleX(0); @include transition(all, .5s); }
+.motion-unfold-x-10 { opacity: 0; @include scaleX(0); @include transition(all, .5s); }
+.motion-unfold-x-11 { opacity: 0; @include scaleX(0); @include transition(all, .5s); }
+.motion-unfold-x-12 { opacity: 0; @include scaleX(0); @include transition(all, .5s); }
+.motion-unfold-x-13 { opacity: 0; @include scaleX(0); @include transition(all, .5s); }
+.motion-unfold-x-14 { opacity: 0; @include scaleX(0); @include transition(all, .5s); }
+.motion-unfold-x-15 { opacity: 0; @include scaleX(0); @include transition(all, .5s); }
+
+.motion-unfold-y-1 { opacity: 0; @include scaleY(0); @include transition(all, .5s); }
+.motion-unfold-y-2 { opacity: 0; @include scaleY(0); @include transition(all, .5s); }
+.motion-unfold-y-3 { opacity: 0; @include scaleY(0); @include transition(all, .5s); }
+.motion-unfold-y-4 { opacity: 0; @include scaleY(0); @include transition(all, .5s); }
+.motion-unfold-y-5 { opacity: 0; @include scaleY(0); @include transition(all, .5s); }
+.motion-unfold-y-6 { opacity: 0; @include scaleY(0); @include transition(all, .5s); }
+.motion-unfold-y-7 { opacity: 0; @include scaleY(0); @include transition(all, .5s); }
+.motion-unfold-y-8 { opacity: 0; @include scaleY(0); @include transition(all, .5s); }
+.motion-unfold-y-9 { opacity: 0; @include scaleY(0); @include transition(all, .5s); }
+.motion-unfold-y-10 { opacity: 0; @include scaleY(0); @include transition(all, .5s); }
+.motion-unfold-y-11 { opacity: 0; @include scaleY(0); @include transition(all, .5s); }
+.motion-unfold-y-12 { opacity: 0; @include scaleY(0); @include transition(all, .5s); }
+.motion-unfold-y-13 { opacity: 0; @include scaleY(0); @include transition(all, .5s); }
+.motion-unfold-y-14 { opacity: 0; @include scaleY(0); @include transition(all, .5s); }
+.motion-unfold-y-15 { opacity: 0; @include scaleY(0); @include transition(all, .5s); }
+
+.motion-right-1 { opacity: 0; @include translateX(100px); @include transition(all, .5s); }
+.motion-right-2 { opacity: 0; @include translateX(100px); @include transition(all, .5s); }
+.motion-right-3 { opacity: 0; @include translateX(100px); @include transition(all, .5s); }
+.motion-right-4 { opacity: 0; @include translateX(100px); @include transition(all, .5s); }
+.motion-right-5 { opacity: 0; @include translateX(100px); @include transition(all, .5s); }
+.motion-right-6 { opacity: 0; @include translateX(100px); @include transition(all, .5s); }
+.motion-right-7 { opacity: 0; @include translateX(100px); @include transition(all, .5s); }
+.motion-right-8 { opacity: 0; @include translateX(100px); @include transition(all, .5s); }
+.motion-right-9 { opacity: 0; @include translateX(100px); @include transition(all, .5s); }
+.motion-right-10 { opacity: 0; @include translateX(100px); @include transition(all, .5s); }
+.motion-right-11 { opacity: 0; @include translateX(100px); @include transition(all, .5s); }
+.motion-right-12 { opacity: 0; @include translateX(100px); @include transition(all, .5s); }
+.motion-right-13 { opacity: 0; @include translateX(100px); @include transition(all, .5s); }
+.motion-right-14 { opacity: 0; @include translateX(100px); @include transition(all, .5s); }
+.motion-right-15 { opacity: 0; @include translateX(100px); @include transition(all, .5s); }
+
+.motion-left-1 { opacity: 0; @include translateX(-100px); @include transition(all, .5s); }
+.motion-left-2 { opacity: 0; @include translateX(-100px); @include transition(all, .5s); }
+.motion-left-3 { opacity: 0; @include translateX(-100px); @include transition(all, .5s); }
+.motion-left-4 { opacity: 0; @include translateX(-100px); @include transition(all, .5s); }
+.motion-left-5 { opacity: 0; @include translateX(-100px); @include transition(all, .5s); }
+.motion-left-6 { opacity: 0; @include translateX(-100px); @include transition(all, .5s); }
+.motion-left-7 { opacity: 0; @include translateX(-100px); @include transition(all, .5s); }
+.motion-left-8 { opacity: 0; @include translateX(-100px); @include transition(all, .5s); }
+.motion-left-9 { opacity: 0; @include translateX(-100px); @include transition(all, .5s); }
+.motion-left-10 { opacity: 0; @include translateX(-100px); @include transition(all, .5s); }
+.motion-left-11 { opacity: 0; @include translateX(-100px); @include transition(all, .5s); }
+.motion-left-12 { opacity: 0; @include translateX(-100px); @include transition(all, .5s); }
+.motion-left-13 { opacity: 0; @include translateX(-100px); @include transition(all, .5s); }
+.motion-left-14 { opacity: 0; @include translateX(-100px); @include transition(all, .5s); }
+.motion-left-15 { opacity: 0; @include translateX(-100px); @include transition(all, .5s); }
+
+.motion-shake-x {
+    opacity: 1; 
+    @include transition(all, .9s, $how: ease-in-out); 
+    @include animation(shakeX, 1s, $iteration: infinite, $timing: linear){
+        0%, 100% { @include transform(translateX(0)); }
+        50% { @include transform(translateX(5px)); }
+    }
+}
+.motion-shake-y {
+    opacity: 1; 
+    @include transition(all, .9s, $how: ease-in-out); 
+    @include animation(shakeY, 1s, $iteration: infinite, $timing: linear){
+        0%, 100% { @include transform(translateY(0) rotate(0)); }
+        50% { @include transform(translateY(5px) rotate(-5deg)); }
+    }
+}
+
+.active {
+    // &.section { opacity: 1; } 
+
+    .highlight:after { width: 100%; opacity: 1; }
+    .highlight-1:after { @include transitionDelay(.5s); }
+    .highlight-2:after { @include transitionDelay(1.0s); }
+    .highlight-3:after { @include transitionDelay(1.5s); }
+
+    .motion-up-1 { opacity: 1; @include translateY(0); @include transitionDelay(.1s); }
+    .motion-up-2 { opacity: 1; @include translateY(0); @include transitionDelay(.3s); }
+    .motion-up-3 { opacity: 1; @include translateY(0); @include transitionDelay(0.6s); }
+    .motion-up-4 { opacity: 1; @include translateY(0); @include transitionDelay(0.9s); }
+    .motion-up-5 { opacity: 1; @include translateY(0); @include transitionDelay(1.2s); }
+    .motion-up-6 { opacity: 1; @include translateY(0); @include transitionDelay(1.5s); }
+    .motion-up-7 { opacity: 1; @include translateY(0); @include transitionDelay(1.8s); }
+    .motion-up-8 { opacity: 1; @include translateY(0); @include transitionDelay(2.1s); }
+    .motion-up-9 { opacity: 1; @include translateY(0); @include transitionDelay(2.4s); }
+    .motion-up-10 { opacity: 1; @include translateY(0); @include transitionDelay(2.7s); }
+    .motion-up-11 { opacity: 1; @include translateY(0); @include transitionDelay(3.0s); }
+    .motion-up-12 { opacity: 1; @include translateY(0); @include transitionDelay(3.3s); }
+    .motion-up-13 { opacity: 1; @include translateY(0); @include transitionDelay(3.6s); }
+    .motion-up-14 { opacity: 1; @include translateY(0); @include transitionDelay(3.9s); }
+    .motion-up-15 { opacity: 1; @include translateY(0); @include transitionDelay(4.2s); }
+
+    .motion-bounce-1 { opacity: 1; @include translateY(0); @include transitionDelay(.1s); }
+    .motion-bounce-2 { opacity: 1; @include translateY(0); @include transitionDelay(.3s); }
+    .motion-bounce-3 { opacity: 1; @include translateY(0); @include transitionDelay(0.6s); }
+    .motion-bounce-4 { opacity: 1; @include translateY(0); @include transitionDelay(0.9s); }
+    .motion-bounce-5 { opacity: 1; @include translateY(0); @include transitionDelay(1.2s); }
+    .motion-bounce-6 { opacity: 1; @include translateY(0); @include transitionDelay(1.5s); }
+    .motion-bounce-7 { opacity: 1; @include translateY(0); @include transitionDelay(1.8s); }
+    .motion-bounce-8 { opacity: 1; @include translateY(0); @include transitionDelay(2.1s); }
+    .motion-bounce-9 { opacity: 1; @include translateY(0); @include transitionDelay(2.4s); }
+    .motion-bounce-10 { opacity: 1; @include translateY(0); @include transitionDelay(2.7s); }
+    .motion-bounce-11 { opacity: 1; @include translateY(0); @include transitionDelay(3.0s); }
+    .motion-bounce-12 { opacity: 1; @include translateY(0); @include transitionDelay(3.3s); }
+    .motion-bounce-13 { opacity: 1; @include translateY(0); @include transitionDelay(3.6s); }
+    .motion-bounce-14 { opacity: 1; @include translateY(0); @include transitionDelay(3.9s); }
+    .motion-bounce-15 { opacity: 1; @include translateY(0); @include transitionDelay(4.2s); }
+
+    .motion-scale-1 { opacity: 1; @include scaleXY(1, 1); @include transitionDelay(.1s); }
+    .motion-scale-2 { opacity: 1; @include scaleXY(1, 1); @include transitionDelay(.3s); }
+    .motion-scale-3 { opacity: 1; @include scaleXY(1, 1); @include transitionDelay(0.6s); }
+    .motion-scale-4 { opacity: 1; @include scaleXY(1, 1); @include transitionDelay(0.9s); }
+    .motion-scale-5 { opacity: 1; @include scaleXY(1, 1); @include transitionDelay(1.2s); }
+    .motion-scale-6 { opacity: 1; @include scaleXY(1, 1); @include transitionDelay(1.5s); }
+    .motion-scale-7 { opacity: 1; @include scaleXY(1, 1); @include transitionDelay(1.8s); }
+    .motion-scale-8 { opacity: 1; @include scaleXY(1, 1); @include transitionDelay(2.1s); }
+    .motion-scale-9 { opacity: 1; @include scaleXY(1, 1); @include transitionDelay(2.4s); }
+    .motion-scale-10 { opacity: 1; @include scaleXY(1, 1); @include transitionDelay(2.7s); }
+    .motion-scale-11 { opacity: 1; @include scaleXY(1, 1); @include transitionDelay(3.0s); }
+    .motion-scale-12 { opacity: 1; @include scaleXY(1, 1); @include transitionDelay(3.3s); }
+    .motion-scale-13 { opacity: 1; @include scaleXY(1, 1); @include transitionDelay(3.6s); }
+    .motion-scale-14 { opacity: 1; @include scaleXY(1, 1); @include transitionDelay(3.9s); }
+    .motion-scale-15 { opacity: 1; @include scaleXY(1, 1); @include transitionDelay(4.2s); }
+
+    .motion-unfold-x-1 { opacity: 1; @include scaleX(1); @include transitionDelay(.1s); }
+    .motion-unfold-x-2 { opacity: 1; @include scaleX(1); @include transitionDelay(.3s); }
+    .motion-unfold-x-3 { opacity: 1; @include scaleX(1); @include transitionDelay(0.6s); }
+    .motion-unfold-x-4 { opacity: 1; @include scaleX(1); @include transitionDelay(0.9s); }
+    .motion-unfold-x-5 { opacity: 1; @include scaleX(1); @include transitionDelay(1.2s); }
+    .motion-unfold-x-6 { opacity: 1; @include scaleX(1); @include transitionDelay(1.5s); }
+    .motion-unfold-x-7 { opacity: 1; @include scaleX(1); @include transitionDelay(1.8s); }
+    .motion-unfold-x-8 { opacity: 1; @include scaleX(1); @include transitionDelay(2.1s); }
+    .motion-unfold-x-9 { opacity: 1; @include scaleX(1); @include transitionDelay(2.4s); }
+    .motion-unfold-x-10 { opacity: 1; @include scaleX(1); @include transitionDelay(2.7s); }
+    .motion-unfold-x-11 { opacity: 1; @include scaleX(1); @include transitionDelay(3.0s); }
+    .motion-unfold-x-12 { opacity: 1; @include scaleX(1); @include transitionDelay(3.3s); }
+    .motion-unfold-x-13 { opacity: 1; @include scaleX(1); @include transitionDelay(3.6s); }
+    .motion-unfold-x-14 { opacity: 1; @include scaleX(1); @include transitionDelay(3.9s); }
+    .motion-unfold-x-15 { opacity: 1; @include scaleX(1); @include transitionDelay(4.2s); }
+
+    .motion-unfold-y-1 { opacity: 1; @include scaleY(1); @include transitionDelay(.1s); }
+    .motion-unfold-y-2 { opacity: 1; @include scaleY(1); @include transitionDelay(.3s); }
+    .motion-unfold-y-3 { opacity: 1; @include scaleY(1); @include transitionDelay(0.6s); }
+    .motion-unfold-y-4 { opacity: 1; @include scaleY(1); @include transitionDelay(0.9s); }
+    .motion-unfold-y-5 { opacity: 1; @include scaleY(1); @include transitionDelay(1.2s); }
+    .motion-unfold-y-6 { opacity: 1; @include scaleY(1); @include transitionDelay(1.5s); }
+    .motion-unfold-y-7 { opacity: 1; @include scaleY(1); @include transitionDelay(1.8s); }
+    .motion-unfold-y-8 { opacity: 1; @include scaleY(1); @include transitionDelay(2.1s); }
+    .motion-unfold-y-9 { opacity: 1; @include scaleY(1); @include transitionDelay(2.4s); }
+    .motion-unfold-y-10 { opacity: 1; @include scaleY(1); @include transitionDelay(2.7s); }
+    .motion-unfold-y-11 { opacity: 1; @include scaleY(1); @include transitionDelay(3.0s); }
+    .motion-unfold-y-12 { opacity: 1; @include scaleY(1); @include transitionDelay(3.3s); }
+    .motion-unfold-y-13 { opacity: 1; @include scaleY(1); @include transitionDelay(3.6s); }
+    .motion-unfold-y-14 { opacity: 1; @include scaleY(1); @include transitionDelay(3.9s); }
+    .motion-unfold-y-15 { opacity: 1; @include scaleY(1); @include transitionDelay(4.2s); }
+
+    .motion-right-1,
+    .motion-left-1 { opacity: 1; @include translateX(0); @include transitionDelay(.1s); }
+    .motion-right-2,
+    .motion-left-2 { opacity: 1; @include translateX(0); @include transitionDelay(.3s); }
+    .motion-right-3,
+    .motion-left-3 { opacity: 1; @include translateX(0); @include transitionDelay(0.6s); }
+    .motion-right-4,
+    .motion-left-4 { opacity: 1; @include translateX(0); @include transitionDelay(0.9s); }
+    .motion-right-5,
+    .motion-left-5 { opacity: 1; @include translateX(0); @include transitionDelay(1.2s); }
+    .motion-right-6,
+    .motion-left-6 { opacity: 1; @include translateX(0); @include transitionDelay(1.5s); }
+    .motion-right-7,
+    .motion-left-7 { opacity: 1; @include translateX(0); @include transitionDelay(1.8s); }
+    .motion-right-8,
+    .motion-left-8 { opacity: 1; @include translateX(0); @include transitionDelay(2.1s); }
+    .motion-right-9,
+    .motion-left-9 { opacity: 1; @include translateX(0); @include transitionDelay(2.4s); }
+    .motion-right-10,
+    .motion-left10 { opacity: 1; @include translateX(0); @include transitionDelay(2.7s); }
+
+    .motion-shake-x { opacity: 1; @include transitionDelay(.1s); }
+    .motion-shake-y { opacity: 1; @include transitionDelay(.1s); }
+}

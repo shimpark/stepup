@@ -1,0 +1,47 @@
+#wrap {
+  .section-privacy {
+    text-align: left;
+    background-color:#fff;
+    font-size:14px;
+    padding:30px;
+    @include breakpoint(maxMobile){
+      padding: 60px 150px;
+      font-size: 17px;
+    }
+
+    .wrap{text-align: left;}
+
+    h2.heading {
+        text-align: center;
+        margin-bottom:20px;
+        font-size:24px;
+        @include breakpoint(maxMobile){
+            font-size: 28px;
+            margin-bottom:30px;
+        }
+    }
+    p{
+      line-height:1.5;margin-bottom:20px;
+      @include breakpoint(maxMobile){}
+    }
+    
+    strong{
+      display:inline-block;margin-top:10px;
+      font-size:15px;font-weight:700;
+      &:first-child{margin-top:0;}
+      @include breakpoint(maxMobile){
+          font-size: 18px;margin-top:5px;
+      }
+    }
+
+    dl {
+       dt{
+          font-size:16px;font-weight:700;margin-bottom:10px;
+          @include breakpoint(maxMobile){
+              font-size: 20px;margin-bottom:20px;
+          }
+        }
+    }
+    a:hover { text-decoration: underline; }
+  }
+}

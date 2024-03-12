@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, height=device-height, maximum-scale=1.0" />
+    <title>title</title>
+    <meta name="title" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta property="fb:app_id" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+<!-- 
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+-->
+    <link rel="stylesheet" href="../../Content/css/slick.css" />
+    <link rel="stylesheet" href="../../Content/css/style.css" />
+
+    <script src="../../libs/jquery-2.1.4.min.js"></script>
+    <script src="../../libs/slick-1.6.0.min.js"></script>
+    <script src="../../libs/TweenMax.min.js"></script>
+    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="container">
+        <!-- header -->
+        <header>
+          <div class="wrap">
+            <div class="logo">
+              <a href="javascript:;" class="logo-img"><img src="../../Content/img/common/logo.png" alt="" /></a>
+			  <a href="javascript:;" class="logo-text">직무 Step-up</a>
+            </div>
+
+            <div id="menu">
+              <a href="javascript:;" class="menu-icon">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+              </a>
+            </div>
+
+            <nav id="gnb">
+              <ul>
+                <li class="active"><a href="javascript:void(0);">마이 페이지</a></li>
+                <li><a href="javascript:void(0);">STEP-UP 지원</a></li>
+                <li><a href="javascript:void(0);">프로그램 소개</a></li>
+                <li class="logout"><a href="javascript:void(0);"><span class="logout-img"><img src="../../Content/img/common/icon_logout.png" alt="" /></span>Logout</a></li>
+              </ul>
+
+            </nav>
+          </div>
+        </header>
+        <!--// header -->
+
+		<div id="contents"  class="page-main">
+			<section class="section">
+				<div class="wrap">
+					<div class="main-title">지원서 작성</div>
+
+					<div class="content-wrap">
+						<div class="content">
+							<div class="form-wrap">
+								<div class="form-label">지원자 정보</div>
+								<div class="form-field-group">
+									<div class="form-field-box">
+										<div class="form-field">
+											<div class="form-subject">이름</div>
+											<div class="form-desc">김대학</div>
+										</div>
+
+										<div class="form-field">
+											<div class="form-subject">전체 경력연수</div>
+											<div class="form-desc">11년</div>
+										</div>
+
+										<div class="form-field">
+											<div class="form-subject">직급</div>
+											<div class="form-desc">책임 매니저</div>
+										</div>
+
+										<div class="form-field">
+											<div class="form-subject">소속</div>
+											<div class="form-desc">E-Biz본부 인프라서비스팀</div>
+										</div>
+									</div>
+
+									<div class="form-field-box">
+										<div class="form-field full">
+											<div class="form-subject">직속리더</div>
+											<div class="form-action"><a href="javascript:popupOpen('#popupLeader');" class="btn">직속 리더 등록</a></div>
+										</div>
+									</div>
+
+									<div class="form-field-box">
+										<div class="form-field full">
+											<div class="form-subject">현재  직무 스텝</div>
+											<div class="form-desc">Planning  /  Account Executive  /   S1 Assistant Account Executive</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- //form-wrap -->
+						</div>
+
+						<div class="content">
+							<div class="form-wrap">
+								<div class="form-label">지원 직무 트랙</div>
+								<div class="form-field-group">
+									<div class="form-field-box">
+
+										<div class="form-select">
+											<select name="" id="">
+												<option value="">Planning</option>
+												<option></option>
+											</select>
+										</div>
+
+										<div class="form-action">
+											<a href="javascript:;" class="btn btn-mint">직무 선택 가이드</a>
+											<a href="javascript:;" class="btn btn-mint">스킬셋 자세히 보기</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- //form-wrap -->
+
+							<div class="form-wrap">
+								<div class="form-label">지원 직무 명칭</div>
+								<div class="form-field-group">
+									<div class="form-field-box">
+										<div class="form-field-tab form-field-tab1">
+											<div class="form-select mobile">
+												<select name="" id="">
+													<option value="">Account Executive</option>
+													<option>Account Planner</option>
+													<option>Contents Creator</option>
+													<option>Media Planner</option>
+												</select>
+											</div>
+
+											<ul class="tab-list pc">
+												<li class="active">
+													<a href="javascript:;">Account Executive</a>
+												</li>
+												<li>
+													<a href="javascript:;">Account Planner</a>
+												</li>
+												<li>
+													<a href="javascript:;">Contents Creator</a>
+												</li>
+												<li>
+													<a href="javascript:;">Media Planner</a>
+												</li>
+											</ul>
+
+											<div class="tab-view">
+												<p class="tab-subject">
+													111Account Executive 직무 설명이 들어가는 영역입니다. Account Executive 직무 설명이 들어가는 영역입니다. Account Executive 직무 설명이 들어가는 영역입니다.  Account Executive 직무 설명이 들어가는 영역입니다. Account Executive 직무 설명이 들어가는 영역입니다.
+												</p>
+											</div>
+
+											<div class="tab-view">
+												<p class="tab-subject">
+													222Account Executive 직무 설명이 들어가는 영역입니다. Account Executive 직무 설명이 들어가는 영역입니다. Account Executive 직무 설명이 들어가는 영역입니다.  Account Executive 직무 설명이 들어가는 영역입니다. Account Executive 직무 설명이 들어가는 영역입니다.
+												</p>
+											</div>
+
+											<div class="tab-view">
+												<p class="tab-subject">
+													333Account Executive 직무 설명이 들어가는 영역입니다. Account Executive 직무 설명이 들어가는 영역입니다. Account Executive 직무 설명이 들어가는 영역입니다.  Account Executive 직무 설명이 들어가는 영역입니다. Account Executive 직무 설명이 들어가는 영역입니다.
+												</p>
+											</div>
+
+											<div class="tab-view">
+												<p class="tab-subject">
+													44Account Executive 직무 설명이 들어가는 영역입니다. Account Executive 직무 설명이 들어가는 영역입니다. Account Executive 직무 설명이 들어가는 영역입니다.  Account Executive 직무 설명이 들어가는 영역입니다. Account Executive 직무 설명이 들어가는 영역입니다.
+												</p>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+							</div><!-- //form-wrap -->
+
+							<div class="form-wrap border-top-none">
+								<div class="form-label">지원 직무 스텝</div>
+								<div class="form-field-group">
+									<div class="form-field-box ">
+										<div class="form-field-tab form-field-tab2">
+											<div class="form-select mobile">
+												<select name="" id="">
+													<option value="">S1 Account Executive</option>
+													<option>S2 Account Planner</option>
+													<option>S3 Contents Creator</option>
+													<option>S4 Media Planner</option>
+												</select>
+											</div>
+
+											<ul class="tab-list pc">
+												<li class="active">
+													<a href="javascript:;"><span class="color-point">S1</span>Account Executive</a>
+												</li>
+												<li>
+													<a href="javascript:;"><span class="color-point">S2</span>Account Executive</a>
+												</li>
+												<li>
+													<a href="javascript:;"><span class="color-point">S3</span>Account Executive</a>
+												</li>
+											</ul>
+
+											<div class="tab-view">
+												<p class="tab-subject">S1 Assistant Account Executive  스킬셋</p>
+												<ul class="tab-desc">
+													<li><strong>커뮤니케이션 L2</strong> - 핵심 메시지 전달과 이해</li>
+													<li><strong>전략 솔루션 L2</strong> - 전략 방향 수립, 전략적 사고</li>
+													<li><strong>미디어 솔루션 L2</strong> - 핵심 메시지 전달과 이해</li>
+													<li><strong>커뮤니케이션 L2</strong> - 핵심 메시지 전달과 이해</li>
+													<li><strong>전략 솔루션 L2</strong> - 전략 방향 수립, 전략적 사고</li>
+													<li><strong>전략 솔루션 L2</strong> - 전략 방향 수립, 전략적 사고</li>
+												</ul>
+											</div>
+
+											<div class="tab-view">
+												<p class="tab-subject">S2 Assistant Account Executive  스킬셋</p>
+												<ul class="tab-desc">
+													<li><strong>커뮤니케이션 L2</strong> - 핵심 메시지 전달과 이해</li>
+													<li><strong>전략 솔루션 L2</strong> - 전략 방향 수립, 전략적 사고</li>
+													<li><strong>미디어 솔루션 L2</strong> - 핵심 메시지 전달과 이해</li>
+													<li><strong>커뮤니케이션 L2</strong> - 핵심 메시지 전달과 이해</li>
+													<li><strong>전략 솔루션 L2</strong> - 전략 방향 수립, 전략적 사고</li>
+													<li><strong>전략 솔루션 L2</strong> - 전략 방향 수립, 전략적 사고</li>
+												</ul>
+											</div>
+
+											<div class="tab-view">
+												<p class="tab-subject">S3 Assistant Account Executive  스킬셋</p>
+												<ul class="tab-desc">
+													<li><strong>커뮤니케이션 L2</strong> - 핵심 메시지 전달과 이해</li>
+													<li><strong>전략 솔루션 L2</strong> - 전략 방향 수립, 전략적 사고</li>
+													<li><strong>미디어 솔루션 L2</strong> - 핵심 메시지 전달과 이해</li>
+													<li><strong>커뮤니케이션 L2</strong> - 핵심 메시지 전달과 이해</li>
+													<li><strong>전략 솔루션 L2</strong> - 전략 방향 수립, 전략적 사고</li>
+													<li><strong>전략 솔루션 L2</strong> - 전략 방향 수립, 전략적 사고</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- //form-wrap -->
+
+							<div class="form-wrap  border-top-none">
+								<div class="form-label">본인 스킬 기술</div>
+								<div class="form-field-group">
+									<div class="form-field-box">
+										<div class="form-field full">
+											<div class="form-subject">선택한 직무 트랙 / 직무 명칭 / 직무 스킬셋</div>
+											<div class="form-desc color-point">Planning  /  Account Executive  /   S1 Assistant Account Executive</div>
+										</div>
+									</div>
+
+									<div class="form-field-box border-top-line">
+										<div class="form-field mb-0 full">
+											<div class="form-desc color-point"><strong>커뮤니케이션 (L2)</strong></div>
+											<div class="form-text">
+												<strong>[핵심 메시지 전달과 이해]</strong><br/>
+												이해관계자들의 메시지를 잘 이해하고, 수신자에게 본인이 전달하고자 하는 메시지가 제 때에 정확하게 이해될 수 있도록 다양한 방식(기획안·보고서 등의 문서, 
+												전화, 메일, 메신저, 대면 미팅 등)을 활용하여 효과적으로 전달한다.
+											</div>
+										</div>
+										<div class="form-textarea">
+											<textarea value="">• Situation (상황) • Goal (목표)  • Behavior (행동) • Impact (행동에 따른 결과, 목표달성정도) 4가지가 담기도록 서술하시오
+											</textarea>
+											<div class="form-ta-counter">0/1000</div>
+										</div>
+									</div>
+
+									<div class="form-field-box">
+										<div class="form-field mb-0 full">
+											<div class="form-desc color-point"><strong>인사이트 (L2)</strong></div>
+											<div class="form-text">
+												<strong>[데이터/사례 분석 및 가공] </strong><br/>
+												수집된 데이터/사례들을 시장·고객·타깃의 상황을 고려하여 종합적으로 분석함으로써 본인이 수립한 가설을 검증한다. 제안 또는 프로젝트 수행 시 문제 해결에 
+												유효한 데이터가 될 수 있도록 가공하여 정리한다.
+											</div>
+										</div>
+										<div class="form-textarea">
+											<textarea value="">• Situation (상황) • Goal (목표)  • Behavior (행동) • Impact (행동에 따른 결과, 목표달성정도) 4가지가 담기도록 서술하시오
+											</textarea>
+											<div class="form-ta-counter">0/1000</div>
+										</div>
+									</div>
+
+									
+									<div class="form-field-box">
+										<div class="form-field mb-0 full">
+											<div class="form-desc color-point"><strong>전략 솔루션 (L2)</strong></div>
+											<div class="form-text">
+												<strong>[전략 방향 수립, 전략적 사고]</strong><br/>
+												해결해야 할 문제의 우선순위를 정하고, 문제 해결을 위한 전략 방향을 논리적으로 구성하고 설명할 수 있다.
+											</div>
+										</div>
+										<div class="form-textarea">
+											<textarea value="">• Situation (상황) • Goal (목표)  • Behavior (행동) • Impact (행동에 따른 결과, 목표달성정도) 4가지가 담기도록 서술하시오
+											</textarea>
+											<div class="form-ta-counter">0/1000</div>
+										</div>
+									</div>
+
+									<div class="form-field-box">
+										<div class="form-field mb-0 full">
+											<div class="form-desc color-point"><strong>크리에이티브 솔루션 (L1)</strong></div>
+											<div class="form-text">
+												<strong>[전략 방향 수립, 전략적 사고]</strong><br/>
+												해결해야 할 문제의 우선순위를 정하고, 문제 해결을 위한 전략 방향을 논리적으로 구성하고 설명할 수 있다.
+											</div>
+										</div>
+										<div class="form-textarea">
+											<textarea value="">• Situation (상황) • Goal (목표)  • Behavior (행동) • Impact (행동에 따른 결과, 목표달성정도) 4가지가 담기도록 서술하시오
+											</textarea>
+											<div class="form-ta-counter">0/1000</div>
+										</div>
+									</div>
+									
+
+									<div class="form-field-box">
+										<div class="form-field mb-0 full">
+											<div class="form-desc color-point"><strong>미디어 솔루션 (L1)</strong></div>
+											<div class="form-text">
+												<strong>[전략 방향 수립, 전략적 사고]</strong><br/>
+												해결해야 할 문제의 우선순위를 정하고, 문제 해결을 위한 전략 방향을 논리적으로 구성하고 설명할 수 있다.
+											</div>
+										</div>
+										<div class="form-textarea">
+											<textarea value="">• Situation (상황) • Goal (목표)  • Behavior (행동) • Impact (행동에 따른 결과, 목표달성정도) 4가지가 담기도록 서술하시오
+											</textarea>
+											<div class="form-ta-counter">0/1000</div>
+										</div>
+									</div>
+
+									<div class="form-field-box">
+										<div class="form-field mb-0 full">
+											<div class="form-desc color-point"><strong>프로젝트 매니지먼트 (L1)</strong></div>
+											<div class="form-text">
+												<strong>[전략 방향 수립, 전략적 사고]</strong><br/>
+												해결해야 할 문제의 우선순위를 정하고, 문제 해결을 위한 전략 방향을 논리적으로 구성하고 설명할 수 있다.
+											</div>
+										</div>
+										<div class="form-textarea">
+											<textarea value="">• Situation (상황) • Goal (목표)  • Behavior (행동) • Impact (행동에 따른 결과, 목표달성정도) 4가지가 담기도록 서술하시오
+											</textarea>
+											<div class="form-ta-counter">0/1000</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- //form-wrap -->
+
+							<div class="form-wrap  border-top-none">
+								<div class="form-label">직무 성장 지향<br class="pc"/> 및 목표 기술</div>
+								<div class="form-field-group">
+									<div class="form-field-box">
+										<div class="form-text  mt-0">본인의 직무 성장 지향과 목표를 자유롭게 서술해주세요.</div>
+										<div class="form-textarea">
+											<textarea value="">내용을 입력해 주세요.
+											</textarea>
+											<div class="form-ta-counter">0/1000</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- //form-wrap -->
+
+							<div class="form-wrap  border-top-none">
+								<div class="form-label">지원자 총평</div>
+								<div class="form-field-group">
+									<div class="form-field-box">
+										<div class="form-text mt-0">본인 보유 스킬의 전체적인 리뷰와 아쉬운 점, 향후 개선 과제 등 자유롭게 서술하세요</div>
+										<div class="form-textarea">
+											<textarea value="">내용을 입력해 주세요.
+											</textarea>
+											<div class="form-ta-counter">0/1000</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- //form-wrap -->
+
+
+
+						</div>
+
+					</div>
+
+
+					<div class="action">
+						<a href="javascript:;" class="btn">취소</a>
+						<a href="javascript:;" class="btn btn-mint">저장 후 다음</a>
+					</div>
+				</div>
+
+			</section>
+			<!-- //right page area END -->
+		</div>
+
+        <footer>
+          <div class="wrap">
+            <div class="footer-copyright">
+              <div class="copyright">COPYRIGHT(C) DAEHAK NEAIL ALL RIGHTS RESERVED.</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <div class="dim"></div>
+
+	  <div class="popup" id="popupLeader">
+        <div class="popup-wrap">
+          <div class="popup-title">
+			직속 리더 변경
+          </div>
+          <div class="popup-cont">
+			  <div class="popup-input">
+				<input type="text" class="text" />
+				<a href="javascript:;" class="btn wide btn-mint">변경</a>
+			</div>
+			<div class="popup-text">
+				※ 변경하고자 하는 직속 리더와 사전 협의를 꼭 거친 후 변경해 주세요.<br/>
+				※ 변경하고자 하는 직속 리더의 사내 메일 주소를 입력해 주세요.<br/>
+				※ 최종 제출 후에는 직속 리더 변경이 어려우니 정확히 확인 후 변경해 주세요.
+			</div>
+
+          </div>
+          <div class="popup-btn">
+            <a href="javascript:popupClose('#popupLeader');">닫기</a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <script src="../../js/script.js"></script>
+    <script>
+      $(function () {
+        
+
+      });
+    </script>
+  </body>
+</html>

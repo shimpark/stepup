@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, height=device-height, maximum-scale=1.0" />
+    <title>title</title>
+    <meta name="title" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta property="fb:app_id" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+<!-- 
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+-->
+    <link rel="stylesheet" href="../../Content/css/slick.css" />
+    <link rel="stylesheet" href="../../Content/css/style.css" />
+
+    <script src="../../libs/jquery-2.1.4.min.js"></script>
+    <script src="../../libs/slick-1.6.0.min.js"></script>
+    <script src="../../libs/TweenMax.min.js"></script>
+    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="container">
+        <!-- header -->
+        <header>
+          <div class="wrap">
+            <div class="logo">
+              <a href="javascript:;" class="logo-img"><img src="../../Content/img/common/logo.png" alt="" /></a>
+			  <a href="javascript:;" class="logo-text">직무 Step-up</a>
+            </div>
+
+            <div id="menu">
+              <a href="javascript:;" class="menu-icon">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+              </a>
+            </div>
+
+            <nav id="gnb">
+              <ul>
+                <li class="active"><a href="javascript:void(0);">마이 페이지</a></li>
+                <li><a href="javascript:void(0);">STEP-UP 지원</a></li>
+                <li><a href="javascript:void(0);">프로그램 소개</a></li>
+                <li class="logout"><a href="javascript:void(0);"><span class="logout-img"><img src="../../Content/img/common/icon_logout.png" alt="" /></span>Logout</a></li>
+              </ul>
+
+            </nav>
+          </div>
+        </header>
+        <!--// header -->
+
+		<div id="contents"  class="page-main">
+			<section class="section">
+				<div class="wrap">
+					<div class="main-title">지원서 작성</div>
+
+					<div class="content-wrap">
+						<div class="content">
+							<div class="form-wrap">
+								<div class="form-label">Additional<br class="pc"/> Skill</div>
+								<div class="form-field-group">
+                                    <div class="form-field-box">
+										<div class="form-field full">
+											<div class="form-text mt-0">선택한 직무에 포함되는 스킬 외에 추가로 보유하고 있는 스킬이 있다면 자유롭게 입력해 주세요. (최대 10개)</div>
+                                            <div class="form-btn">
+                                                <a href="javascript:;" class="btn btn-mint btn-plus"><span class="icon"><img src="../../Content/img/common/icon_plus.png" alt="" /></span>추가</a>
+                                            </div>
+										</div>
+
+                                        <div class="form-group">
+                                            <div class="form-flex-box">
+                                                <div class="form-select">
+                                                    <select name="" id="">
+                                                        <option value="">스킬명</option>
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-select">
+                                                    <select name="" id="">
+                                                        <option value="">레벨</option>
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="form-textarea">
+                                                <textarea value="">• Situation (상황) • Goal (목표)&nbsp; • Behavior (행동) • Impact (행동에 따른 결과, 목표달성정도) 4가지가 담기도록 서술하시오
+                                                </textarea>
+                                                <div class="form-ta-counter">0/1000</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="form-flex-box">
+												<div class="form-btn">
+                                                    <a href="javascript:;" class="btn"><span class="icon"><img src="../../Content/img/common/icon_delete.png" alt="" /></span>삭제</a>
+                                                </div>
+                                                <div class="form-select">
+                                                    <select name="" id="">
+                                                        <option value="">스킬명</option>
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-select">
+                                                    <select name="" id="">
+                                                        <option value="">레벨</option>
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="form-textarea">
+                                                <textarea value="">• Situation (상황) • Goal (목표)&nbsp; • Behavior (행동) • Impact (행동에 따른 결과, 목표달성정도) 4가지가 담기도록 서술하시오
+                                                </textarea>
+                                                <div class="form-ta-counter">0/1000</div>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div><!-- //form-wrap -->
+
+							<div class="form-wrap">
+								<div class="form-label">Tool Skill</div>
+								<div class="form-field-group">
+                                    <div class="form-field-box">
+										<div class="form-field full">
+											<div class="form-text mt-0">지원한 직무 스텝과 관련한 Tool 활용 능력이 있다면 작성해 주세요 (최대 10개)</div>
+                                            <div class="form-btn">
+                                                <a href="javascript:;" class="btn btn-mint btn-plus"><span class="icon"><img src="../../Content/img/common/icon_plus.png" alt="" /></span>추가</a>
+                                            </div>
+										</div>
+
+                                        <div class="form-group">
+                                            <div class="form-flex-box">
+                                                <div class="form-select">
+                                                    <select name="" id="">
+                                                        <option value="">어도비 포토샵</option>
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+												<div class="form-field-radio">
+													<ul class="form-field-list">
+														<li>
+															<span class="radio">
+																<input type="radio" id="upper1" name="viewtype" value="" checked="">
+																<label for="upper1"><span class="round">상</span></label>
+															</span>
+														</li>
+														<li>
+															<span class="radio">
+																<input type="radio" id="middle1" name="viewtype" value="">
+																<label for="middle1"><span class="round">중</span></label>
+															</span>
+														</li>
+														<li>
+															<span class="radio">
+																<input type="radio" id="lower1" name="viewtype" value="">
+																<label for="lower1"><span class="round">하</span></label>
+															</span>
+														</li>
+													</ul>
+												</div>
+                                            </div>
+                                        </div>
+
+										<div class="form-group">
+                                            <div class="form-flex-box">
+												<div class="form-btn">
+                                                    <a href="javascript:;" class="btn"><span class="icon"><img src="../../Content/img/common/icon_delete.png" alt=""></span>삭제</a>
+                                                </div>
+                                                <div class="form-select">
+                                                    <select name="" id="">
+                                                        <option value="">어도비 포토샵</option>
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+												<div class="form-field-radio">
+													<ul class="form-field-list">
+														<li>
+															<span class="radio">
+																<input type="radio" id="upper2" name="viewtype2" value="" checked="">
+																<label for="upper2"><span class="round">상</span></label>
+															</span>
+														</li>
+														<li>
+															<span class="radio">
+																<input type="radio" id="middle2" name="viewtype2" value="">
+																<label for="middle2"><span class="round">중</span></label>
+															</span>
+														</li>
+														<li>
+															<span class="radio">
+																<input type="radio" id="lower2" name="viewtype2" value="">
+																<label for="lower2"><span class="round">하</span></label>
+															</span>
+														</li>
+													</ul>
+												</div>
+
+                                            </div>
+                                        </div>
+
+										<div class="form-group">
+                                            <div class="form-flex-box">
+												<div class="form-btn">
+                                                    <a href="javascript:;" class="btn"><span class="icon"><img src="../../Content/img/common/icon_delete.png" alt=""></span>삭제</a>
+                                                </div>
+                                                <div class="form-select">
+                                                    <select name="" id="">
+                                                        <option value="">기타</option>
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+												<div class="form-field-radio">
+													<ul class="form-field-list">
+														<li>
+															<span class="radio">
+																<input type="radio" id="upper3" name="viewtype3" value="" checked="">
+																<label for="upper3"><span class="round">상</span></label>
+															</span>
+														</li>
+														<li>
+															<span class="radio">
+																<input type="radio" id="middle3" name="viewtype3" value="">
+																<label for="middle3"><span class="round">중</span></label>
+															</span>
+														</li>
+														<li>
+															<span class="radio">
+																<input type="radio" id="lower3" name="viewtype3" value="">
+																<label for="lower3"><span class="round">하</span></label>
+															</span>
+														</li>
+													</ul>
+												</div>
+
+                                            </div>
+											<div class="form-input">
+												<input type="text" placeholder="직접 입력" />
+											</div>
+                                        </div>
+
+									</div>
+								</div>
+							</div><!-- //form-wrap -->
+
+							<div class="form-wrap">
+								<div class="form-label">포트폴리오</div>
+								<div class="form-field-group">
+									<div class="form-field-box">
+										<div class="form-field full">
+											<div class="form-text mt-0">
+												본인의 보유 스킬과 전문성 기술을 좀 더 구첵적으로 보강할 수 있는 포트폴리오 파일을 첨부하세요<br/>
+												pdf 파일로 첨부하거나 파일이 여러개일 경우 압축파일로 첨부 바랍니다 (30MB 제한)<br/>
+												고용량의 경우 원드라이브 등에 업로드 후 대용량 파일 링크로 입력
+											</div>
+										</div>
+							
+										<div class="form-group form-field full">
+											<div class="form-subject">업로드</div>
+											<div class="form-file">
+												<input type="text" class="upload-name" value="" readonly="" placeholder="파일을 선택해주세요" tabindex="0">
+												<input type="file" id="fileName" name="ticketImg" class="upload-hidden" tabindex="0">
+												<label for="fileName" class="btn btn-mint wide">파일 업로드</label>
+											</div>
+											<div class="form-validation">
+												※ 30MB pdf , zip 파일만 첨부 가능
+											</div>
+										</div>
+										
+
+										<div class="form-group form-field full">
+											<div class="form-subject">링크</div>
+											<div class="form-input">
+												<input type="text" placeholder="">
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- //form-wrap -->
+
+							<div class="form-wrap">
+								<div class="form-label">자격증<p class="sub-text mt-0">(선택)</p></div>
+								<div class="form-field-group">
+                                    <div class="form-field-box">
+										<div class="form-field full">
+											<div class="form-text mt-0">지원한 직무 스텝과 관련한 자격이 있으면 등록해주세요.</div>
+                                            <div class="form-btn">
+                                                <a href="javascript:;" class="btn btn-mint btn-plus"><span class="icon"><img src="../../Content/img/common/icon_plus.png" alt="" /></span>추가</a>
+                                            </div>
+										</div>
+									</div>
+
+									<div class="form-field-box border-top-line">
+										<div class="form-group mt-0">
+											<div class="form-btn">
+												<a href="javascript:;" class="btn"><span class="icon"><img src="../../Content/img/common/icon_delete.png" alt=""></span>삭제</a>
+											</div>
+
+											<div class="form-box">
+												<dl>
+													<dt>자격 증명</dt>
+													<dd><input type="text" placeholder=""></dd>
+												</dl>
+												<dl class="half">
+													<dt>발급처</dt>
+													<dd><input type="text" placeholder=""></dd>
+												</dl>
+												<dl class="half">
+													<dt>취득일</dt>
+													<dd>
+														<div class="form-date">
+															<input type="text" name="filter-date" id="datepicker1" value=""/>
+														</div>
+													</dd>
+												</dl>
+												<dl>
+													<dt>자격증 사본 <span class="color-point">(제출 필수)</span></dt>
+													<dd>
+														<div class="form-file">
+															<input type="text" class="upload-name" value="" readonly="" placeholder="파일을 선택해주세요" tabindex="0">
+															<input type="file" id="fileName" name="ticketImg" class="upload-hidden" tabindex="0">
+															<label for="fileName" class="btn btn-mint wide">파일 업로드</label>
+														</div>
+													</dd>
+												</dl>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="form-field-box border-top-line">
+										<div class="form-group mt-0">
+											<div class="form-btn">
+												<a href="javascript:;" class="btn"><span class="icon"><img src="../../Content/img/common/icon_delete.png" alt=""></span>삭제</a>
+											</div>
+
+											<div class="form-box">
+												<dl>
+													<dt>자격 증명</dt>
+													<dd><input type="text" placeholder=""></dd>
+												</dl>
+												<dl class="half">
+													<dt>발급처</dt>
+													<dd><input type="text" placeholder=""></dd>
+												</dl>
+												<dl class="half">
+													<dt>취득일</dt>
+													<dd>
+														<div class="form-date">
+															<input type="text" name="filter-date" id="datepicker1" value=""/>
+														</div>
+													</dd>
+												</dl>
+												<dl>
+													<dt>자격증 사본 <span class="color-point">(제출 필수)</span></dt>
+													<dd>
+														<div class="form-file">
+															<input type="text" class="upload-name" value="" readonly="" placeholder="파일을 선택해주세요" tabindex="0">
+															<input type="file" id="fileName" name="ticketImg" class="upload-hidden" tabindex="0">
+															<label for="fileName" class="btn btn-mint wide">파일 업로드</label>
+														</div>
+													</dd>
+												</dl>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+							</div><!-- //form-wrap -->
+
+							
+
+						</div>
+
+					</div>
+
+
+					<div class="action">
+						<a href="javascript:;" class="btn">저장 후 이전</a>
+						<a href="javascript:;" class="btn btn-gray">임시 저장</a>
+						<a href="javascript:popupOpen('#popupSuccess');" class="btn btn-mint">최종 제출</a>
+					</div>
+				</div>
+
+			</section>
+			<!-- //right page area END -->
+		</div>
+
+        <footer>
+          <div class="wrap">
+            <div class="footer-copyright">
+              <div class="copyright">COPYRIGHT(C) DAEHAK NEAIL ALL RIGHTS RESERVED.</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <div class="dim"></div>
+
+	  
+
+	  <div class="popup" id="popupSuccess">
+        <div class="popup-wrap">
+          <div class="popup-title">
+			최종 제출
+          </div>
+          <div class="popup-cont">
+			<div class="popup-sub-text">
+				최종 제출한 지원서는 수정이 불가합니다.<br/>
+				최종 제출 하시겠습니까?
+			</div>
+          </div>
+          <div class="popup-btn">
+			<a href="javascript:popupClose('#popupSuccess');">취소</a>
+            <a href="javascript:popupClose('#popupSuccess');" class="btn-mint">최종 제출</a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <script src="../../js/script.js"></script>
+	
+	<link rel="stylesheet" href="../../Content/css/jquery.datetimepicker.min.css">
+	<link rel="stylesheet" href="../../Content/css/jquery-ui.min.css">
+	
+	<script src="../../libs/jquery.datetimepicker.full.min.js"></script>
+	<script src="../../libs/jquery-ui.min.js"></script>
+
+    <script>
+      $(function () {
+        $('#datepicker1').datetimepicker({
+			timepicker:false,
+ 			formatDate:'Y/m/d',
+		});
+
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,352 @@
+
+#wrap{
+    header{
+        position:relative;z-index:1002;
+        background-color:#fff;
+
+        &.change{
+            background-color:#fff;
+        }
+
+        &.fixed{
+            position:fixed;left:0;top:0;width:100%;
+            background-color:#fff;
+
+            #gnb ul li a{
+                @include breakpoint(maxMobile){
+                    color:#000 !important;
+                }
+            }
+
+            #menu .menu-icon span{background-color:#000 !important;}
+        }
+        
+        .wrap{
+            display:flex;
+            align-items: center;
+            position:relative;
+            @include vw(padding,32px);
+            @include breakpoint(maxMobile){
+                @include vw(padding,24px 20px);
+            }
+
+            @include breakpoint(desktop){
+                @include vw(padding,24px 10px);
+            }
+
+            @include boxSizing(border-box);
+            max-width:1200px;
+        
+            .logo{
+                vertical-align:middle;
+                width:auto;text-align:left;
+                a{
+                    vertical-align:middle;
+                    display:inline-block;
+                    img{max-width:100%;}
+
+                    &.logo-img{
+                        //position:relative;
+                       // @include vw(top, 5px);
+                        @include vw(width, 178px);
+                        @include breakpoint(maxMobile){ 
+                            @include vw(width, 130px);
+                            //top:0;
+                        }
+                    }
+
+					&.logo-text{
+						position:relative;
+						&:before{
+							content:'';
+							width:1.5px;
+							background-color:#1E292D;
+							position:absolute;left:0;top:50%;
+							transform:translateY(-50%);
+                            @include vw(height,32px);
+                            @include breakpoint(maxMobile){ 
+                                @include vw(height,24px);
+                            }
+						}
+
+						color:#1E292D;
+						font-weight:700;
+                        @include vw(padding-left,16px);
+						@include vw(margin-left,16px);
+                        @include vw(font-size, 28px);
+						@include breakpoint(maxMobile){
+							@include vw(font-size, 18px);
+						}
+					}
+                }
+            }
+
+            #gnb{
+                display:none;
+                width:100%;text-align:left;
+                position:absolute;right:auto;top:70px;left:0;z-index:3;
+                padding-bottom:35px;
+                background-color:#fff;
+
+                @include breakpoint(maxMobile){
+                    display:flex;align-items:center;
+                    text-align:right;width:auto;padding-bottom:0;
+                    left:auto;right:20px;top:27px;
+                    background-color:transparent;
+                }
+                ul{
+                    font-size:0;
+                    @include vw(margin-top,170px);
+                    @include breakpoint(maxMobile){
+                        margin-top:0;
+                    }
+                    li{
+                        position:relative;display:block;margin-left:0;
+                        text-align:center;@include vw(margin-top,100px);
+                      
+                        @include breakpoint(maxMobile){
+                            display:inline-block;margin-top:0px;margin-left:16px;
+                        }
+                        @include breakpoint(minDesktop){
+                            margin-left:32px;
+                        }
+
+                        
+
+                        a{
+                            display:inline-block;
+                            @include vw(font-size, 32px);
+                            color:#1E292D;font-weight:700;
+
+                            @include breakpoint(maxMobile){
+                                color:#8D9294;
+                                @include vw(font-size, 16px);
+                            }
+                        }
+
+						&:hover,&:not(:last-child).active{
+							a{
+                                position:relative;
+                                @include vw(padding,0 24px 0 12px);
+                                &:before{
+                                    content:'';
+                                    display:inline-block;
+                                    position:absolute;right:0;bottom:0;
+                                    width:100%;
+                                    @include vw(height, 24px);
+                                    @include bg($url: '../img/common/icon_gnb.png', $position:100% 100%, $size:cover);
+                                }
+
+                                @include breakpoint(maxMobile){
+                                    color:#1E292D;
+
+                                    padding:0;
+                                    &:before{display:none;}
+                                }
+
+                            }
+						}
+
+						&.logout{
+                            position:fixed;
+                            left:50%;transform:translateX(-50%);
+                            @include vw(bottom, 64px);
+							@include breakpoint(maxMobile){
+								margin-left:12px;
+                                position:static;
+                                transform:translateX(0);
+							}
+
+                            @include breakpoint(minDesktop){
+                                margin-left:48px;
+                            }
+							a{
+								color:#1E292D;
+
+								.logout-img{
+									display:inline-block;
+									@include vw(width, 48px);
+									@include vw(margin-right, 8px);
+                                    position:relative;
+                                    @include vw(top, 0px);
+									@include breakpoint(maxMobile){
+										@include vw(width, 24px);
+                                        top:0;
+									}
+								}
+							}
+						}
+                    }
+                }
+
+                form {
+                    display:none;
+
+                    @include breakpoint(maxMobile){
+                        display:block;
+                        margin-left: 20px;
+                        width: 142px;
+                        height: 36px;
+                        border-bottom: 2px solid #e6e6e4;
+                        box-sizing: border-box;
+                        input {
+                            width: 110px;
+                            height: 100%;
+                            font-size: 20px;
+                            color: #707070;
+                            background: transparent;
+                            border: 0;
+                            outline: none;
+                            padding-bottom:12px;
+                            @include vw(font-size,20px);
+
+                        }
+
+                        button {
+                            width: 28px;
+                            height: 28px;
+                            background: url(../img/common/icon_search.png) no-repeat left center;
+                            border: 0;
+                            outline: none;
+                            cursor: pointer;
+                        }
+                    }
+
+                    @media screen and (min-width: 1200px) {
+                        margin-left:40px;
+                    }
+                }
+            }
+        }
+        
+        #menu{
+            margin-left:auto;
+            display:block;
+            @include breakpoint(maxMobile){
+                display:none;
+            }
+
+            .menu-icon,
+            .menu-icon span {
+                display : inline-block;
+                transition : all .4s;
+                box-sizing : border-box;
+            }
+
+            .menu-icon {
+                position : relative;
+                width : 24px;
+                height : 18px;
+            
+
+                span {
+                    position : absolute;
+                    left : 0;
+                    width : 100%;
+                    height : 2px;
+                    background-color : #000;
+                    &:nth-of-type(1) {top : 0;}
+                    &:nth-of-type(2) {top : 8px;}
+                    &:nth-of-type(3) {bottom : 0;}
+                }
+        
+                &.active{
+                    span{
+                        // background-color : #000;
+                        &:nth-of-type(1) {
+                            -webkit-transform : translateY(8px) rotate(-45deg);
+                            transform : translateY(8px) rotate(-45deg);
+                        }
+        
+                        &:nth-of-type(2) {
+                            left : 50%;
+                            opacity : 0;
+                            -webkit-animation:active-menu-bar .8s forwards;
+                            animation : active-menu-bar .8s forwards;
+                        }
+        
+                        &:nth-of-type(3) {
+                            -webkit-transform : translateY(-8px) rotate(45deg);
+                            transform : translateY(-8px) rotate(45deg);
+                        }
+                    }
+                }
+        
+            }
+        
+            @-webkit-keyframes active-menu-bar {
+                100% {
+                    height : 0;
+                }
+            }
+            @keyframes active-menu-bar{
+                100% {
+                    height : 0;
+                }
+            }
+        }
+
+
+    }
+
+    #contents{
+        position:relative;
+        background-color:#f3f3f3;
+		@include vw(padding, 64px 10px);
+		@include boxSizing(border-box);
+		
+    }
+
+    footer {
+        background-color:#fff;
+        .wrap{
+            text-align:center;
+            @include breakpoint(maxMobile){
+                display:flex;
+                align-items:center;
+            }
+            @include vw(padding, 20px 20px);
+            @include vw(font-size, 24px);
+            color:#777D80;
+
+            @include breakpoint(maxMobile){
+                font-size:12px;
+            }
+
+            .footer-copyright{
+                @include breakpoint(maxMobile){
+                    display:flex;
+                }
+                .footer-logo{
+                    @include vw(width, 105px);
+                    margin:0 auto;
+                }
+                .copyright{
+                    //@include vw(margin, 30px 0);
+                    @include breakpoint(maxMobile){
+                        margin:0;
+                       // margin-left:20px;
+                    }
+                }
+            }
+
+            .footer-link{
+                margin-left:auto;
+                a{
+                    @include breakpoint(maxMobile){
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    @include vw(padding, 14px 30px);
+                    border: solid 1px #646464;
+                    @include vw(font-size, 24px);
+                    @include breakpoint(maxMobile){
+                        font-size:14px;
+                        @include vw(padding, 7px 15px);
+                    }
+                }
+            }
+        }
+    }
+}

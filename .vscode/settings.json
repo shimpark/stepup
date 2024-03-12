@@ -1,0 +1,12 @@
+{
+    "liveSassCompile.settings.formats": [
+    {
+        "format": "expanded", 
+        "extensionName": ".css",
+        "savePath": "/Content/css"
+    }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+	"html.mirrorCursorOnMatchingTag": false,
+	"liveServer.settings.port": 5501,
+}

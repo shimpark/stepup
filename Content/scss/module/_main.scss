@@ -1,0 +1,916 @@
+#wrap {
+	overflow-x:hidden;
+	@include breakpoint(maxMobile) {
+		overflow-x:auto;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="number"],
+	select{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+
+		@include vw(height, 96px);
+		@include vw(line-height, 96px);
+		color: #1E292D;
+		@include vw(font-size, 24px);
+		@include vw(border-radius, 16px);
+		@include breakpoint(maxMobile){
+			@include vw(font-size, 16px);
+			@include vw(height, 48px);
+			@include vw(line-height, 48px);
+			@include vw(border-radius, 8px);
+		}
+		width:100%;
+		border:1.5px solid #E2E2E9;
+		@include vw(padding,0 20px);
+		@include boxSizing(border-box);
+		letter-spacing: -1px;
+		font-weight:600;
+		&::placeholder{
+			color:#8D9294;
+			@include vw(font-size, 24px);
+			@include breakpoint(maxMobile){
+				@include vw(font-size, 16px);
+			}
+			letter-spacing: -1px;
+			font-family: $font-suit;
+			font-weight: 400;
+		}
+	}
+
+	select{
+		background:url('../img/common/icon_select.png') no-repeat 98% 50%;
+		@include vw(background-size, 32px 32px);
+		@include breakpoint(maxMobile){
+			@include vw(background-size, 16px 16px);
+		}
+		@include vw(padding-left, 20px);
+		&::-ms-expand { display: none; }
+	}
+
+	input::-ms-clear { display: none; }
+
+
+	.main-title{
+		text-align:left;
+		color:#1E292D;
+		font-weight:700;
+		@include vw(font-size, 34px);
+		@include breakpoint(maxMobile){
+			@include vw(font-size, 24px);
+		}
+		
+	}
+
+	.btn{
+		display:inline-block;
+		color:#fff;
+		font-weight:700;
+		line-height:1;
+		@include vw(border-radius, 88px);
+		@include vw(font-size, 24px);
+		@include vw(padding, 16px 32px);
+		@include breakpoint(maxMobile){
+			@include vw(padding, 8px 16px);
+			@include vw(font-size, 14px);
+			@include vw(border-radius, 44px);
+		}
+		
+		background-color:#1E292D;
+		@include vw(margin-left, 12px);
+		&:first-child{margin-left:0;}
+
+		&.wide{
+			@include vw(padding, 24px 118px);
+			@include breakpoint(maxMobile){
+				@include vw(padding, 16px 24px);
+			}
+		}
+
+		.icon{
+			display:inline-block;
+			@include vw(width, 24px);
+			@include vw(margin-right, 3px);
+			@include breakpoint(maxMobile){
+				@include vw(width, 16px);
+			}
+		}
+	}
+
+
+	.action{
+		text-align:center;
+		@include vw(margin-top, 48px);
+		font-size:0;
+		.btn{
+			@include vw(width, 160px);
+			@include vw(padding, 17px 0);
+		}
+	}
+
+	.content-wrap{
+		.content{
+			background-color:#fff;
+			@include vw(border-radius, 16px);
+			@include vw(padding, 0 40px);
+			box-shadow: 0px 14.2408px 35.6021px rgba(0, 0, 0, 0.05);
+			@include vw(margin-top, 24px);
+		}
+	}
+
+	.form-wrap{
+		display:flex;
+		flex-wrap:wrap;
+		@include vw(padding, 40px 0);
+		border-top:1px solid #E2E2E9;
+		&:first-child{border-top:none;}
+
+		.form-label{
+			position:relative;
+			width:100%;
+			display:inline-block;
+			@include vw(padding-left, 24px);
+			color:#1E292D;
+			font-weight:700;
+			@include vw(font-size, 26px);
+			@include breakpoint(maxMobile){
+				@include vw(font-size, 16px);
+				@include vw(padding-left, 16px);
+			}
+
+			@include breakpoint(desktop){
+				width:15%;
+			}
+
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				@include vw(top, 5px);
+				@include vw(width, 8px);
+				@include vw(height, 24px);
+				background: #00B1CC;
+				@include vw(border-radius, 100px);
+				@include breakpoint(maxMobile){
+					@include vw(width, 4px);
+					@include vw(height, 12px);
+				}
+			}
+
+			.sub-text{
+				color:#6C6F7E;
+				@include vw(font-size, 24px);
+				@include vw(margin-top, 16px);
+				@include breakpoint(maxMobile){
+					@include vw(font-size, 12px);
+					@include vw(margin-top, 12px);
+				}
+				
+				font-weight:400;
+				&.long{
+					@include vw(margin-left,-20px);
+					@include breakpoint(maxMobile){
+						@include vw(margin-left,-16px);
+					}
+				}
+			}
+
+
+		}
+
+		.form-field-group{
+			width:100%;
+			@include breakpoint(desktop){
+				width:83%;
+			}
+			
+			.form-field-box{
+				display:flex;
+				flex-wrap:wrap;
+				text-align:left;
+				width:100%;
+				@include vw(margin-top, 16px);
+				//&:first-child{margin-top:0;}
+				@include breakpoint(desktop){
+					@include vw(margin-top, 40px);
+					&:first-child{margin-top:0;}
+				}
+
+				.form-field{
+					position:relative;
+					width:100%;
+					@include vw(margin-bottom, 48px);
+					//&:last-child{margin-bottom:0;}
+					@include breakpoint(maxMobile){
+						width:25%;
+						@include vw(margin-bottom, 0px);
+						margin-bottom:0;
+					}
+					&.full{
+						width:100%;
+					}
+
+					.form-subject{
+						color:#777D80;@include vw(font-size, 24px);@include vw(margin-bottom, 16px);
+						@include breakpoint(maxMobile){
+							@include vw(font-size, 14px);@include vw(margin-bottom, 10px);
+						}
+					}
+					.form-desc{
+						color:#1E292D;font-weight:700;@include vw(font-size, 28px);
+						@include breakpoint(maxMobile){
+							@include vw(font-size, 18px);
+						}
+					}
+
+				}
+
+
+				.form-tag {
+					background-color: #F3F3F3;
+					@include vw(border-radius, 88px);
+					@include vw(padding, 16px 24px);
+					@include vw(margin-right, 16px);
+					@include vw(margin-bottom, 16px);
+					@include breakpoint(maxMobile){
+						@include vw(border-radius, 44px);
+						@include vw(padding, 10px 24px);
+					}
+					span {
+					  vertical-align: middle;
+					  color: #777D80;
+					  font-weight: 700;
+					  @include vw(font-size, 24px);
+					  @include breakpoint(maxMobile){
+					  	@include vw(font-size, 14px);
+					  }
+					}
+
+				}
+
+				.form-step{
+					width:100%;
+					@include breakpoint(maxMobile){
+						width:48%;
+					}
+					@include breakpoint(desktop){
+						width:24%;
+						@include vw(height,200px);
+					}
+					@include boxSizing(border-box);
+					@include vw(padding,40px 35px);
+					text-align:center;
+					background-color:#F3F3F3;
+					@include vw(border-radius,12px);
+					@include vw(margin-right, 10px);
+					@include vw(margin-bottom, 10px);
+					&:last-child{margin-right:0;}
+					p{
+						text-align:center;
+						color:#1E292D;
+						font-weight:700;
+						@include vw(font-size, 23px);
+						@include vw(margin-top, 20px);
+						@include breakpoint(maxMobile){
+							@include vw(font-size, 13px);
+							@include vw(margin-top, 10px);
+						}
+						
+
+						&:first-child{margin-top:0;}
+						span{color:#00B1CC;letter-spacing:1px;}
+						strong{
+							@include vw(font-size, 26px);
+							@include breakpoint(maxMobile){
+								@include vw(font-size, 16px);
+							}
+						}
+					}
+
+					a{
+						display:inline-block;
+						background-color:#00B1CC;
+						color:#fff;
+						@include vw(font-size, 24px);
+						@include vw(padding,16px 32px);
+						@include vw(border-radius,88px);
+						@include breakpoint(maxMobile){
+							@include vw(font-size, 14px);
+							@include vw(padding,8px 16px);
+							@include vw(border-radius,44px);
+						}
+						@include vw(border-radius,44px);
+						line-height:1;
+						
+						font-weight:700;
+						@include vw(margin-top, 16px);
+					}
+
+
+				}
+
+				.form-group{position:relative;width:100%;@include vw(margin-top, 24px);}
+				.form-flex-box{position:relative;width:100%;display:flex;flex-wrap:wrap;}
+				.form-box{
+					display:flex;
+					flex-wrap:wrap;
+					justify-content: space-between;
+					background-color:#F3F3F3;
+					@include vw(padding, 40px);
+					width:100%;
+					@include vw(border-radius, 16px);
+					@include boxSizing(border-box);
+					
+					@include breakpoint(desktop){
+						@include vw(width, 780px);
+						@include vw(border-radius, 8px);
+					}
+
+					&+.form-btn{top:0;transform: translateY(0);}
+
+					dl{
+						width:100%;
+						@include vw(margin-top, 24px);
+						&:first-child{margin-top:0;}
+						
+						dt{
+							
+							color: #777D80;
+							font-weight: 600;
+							@include vw(font-size, 24px);
+							@include breakpoint(maxMobile){
+								@include vw(font-size, 14px);
+							}
+						}
+						dd{
+							
+							@include vw(margin-top, 10px);
+							input{background-color:#fff;}
+							.form-file .upload-name{
+								width:100%;
+								@include breakpoint(maxMobile){
+									width:76%;
+								}
+
+								@include breakpoint(desktop){
+									width:66%;
+								}
+								
+							}
+						}
+
+						&.half{
+							width:100%;
+							@include breakpoint(maxMobile){
+								width:49%;
+							}
+
+						}
+					}
+				}
+
+				.form-date{
+					input[type=text]{
+						background-repeat: no-repeat;
+						background-position: center right 0.5rem;
+						background-image: url(../img/common/icon_calendar.png);
+						@include vw(background-size, 48px);
+						background-color: #fff;
+						@include vw(height, 96px);
+						@include vw(line-height, 96px);
+						color: #1E292D;
+						@include vw(font-size, 24px);
+						@include breakpoint(maxMobile){
+							@include vw(background-size, 24px);
+							@include vw(font-size, 16px);
+							@include vw(height, 48px);
+							@include vw(line-height, 48px);
+						}
+						
+						
+					}
+
+				}
+
+				.form-select{
+					width:100%;
+					@include vw(margin-bottom, 20px);
+					@include breakpoint(desktop){
+						@include vw(width, 280px);
+						@include vw(margin-right, 20px);
+						margin-bottom:0;
+					}
+				}
+
+				.form-value{
+					@include vw(width, 200px);
+					display:flex;
+					align-items: center;
+					@include vw(margin-right, 20px);
+					color:#333648;
+					font-weight:700;
+					@include vw(font-size, 28px);
+					@include breakpoint(maxMobile){
+						@include vw(font-size, 18px);
+					}
+				}
+
+				.form-feedback{
+					@include vw(margin-top, 16px);
+					background-color:#F3F3F3;
+					@include vw(padding, 24px);
+					@include vw(border-radius, 8px);
+					strong{
+						@include vw(font-size, 24px);
+						@include breakpoint(maxMobile){
+							@include vw(font-size, 14px);
+						}
+					}
+					p{
+						@include vw(font-size, 24px);line-height:1.3;@include vw(margin-top, 6px);
+						@include breakpoint(maxMobile){
+							@include vw(font-size, 14px);
+						}
+					}
+
+				}
+
+				.form-action{
+					@include vw(margin-top, 32px);
+					@include breakpoint(maxMobile){
+						display:flex;
+						margin-left:auto;
+						align-items: center;
+						margin-top:0;
+					}
+				}
+
+				.form-btn{
+					display:flex;
+					justify-content: flex-end;
+					width:100%;
+					@include vw(margin-bottom, 16px);
+					//@include vw(top, -5px);
+
+					.btn-plus{
+						@include vw(margin-top, 16px);
+					}
+					@include breakpoint(desktop){
+						position:absolute;right:0;
+						top:3px;
+						margin:0;
+						.btn-plus{
+							@include vw(margin-top, 0px);
+						}
+
+						
+					}
+				}
+
+				.form-file {
+					position: relative;
+					box-sizing: border-box;
+					width:100%;
+					@include breakpoint(desktop){
+						@include vw(width, 780px);
+					}
+					display:flex;
+					flex-wrap:wrap;
+					@include breakpoint(maxMobile){
+						flex-wrap:nowrap;
+					}
+					.col {
+						position: relative;
+						float: left;
+						box-sizing: border-box;
+					}
+				
+					.upload-name {
+						width:100%;
+						@include breakpoint(maxMobile){
+							width:84%;
+						}
+
+						
+						border: none;
+						border: 1.5px solid #E2E2E9;
+					}
+
+					.btn{
+						width:100%;
+						text-align:center;
+						@include vw(margin-top, 16px);
+						margin-left:0;
+						@include breakpoint(maxMobile){
+							width:16%;
+							margin-top:0;
+							@include vw(margin-left, 12px);
+
+						}
+					}
+								
+					input[type=file]{
+						position: absolute;
+						display: inline-block;
+						overflow: hidden;
+						clip: rect(0 0 0 0);
+						width: 0px;
+						height: 0px;
+						margin: -1px;
+						padding: 0;
+						word-break: keep-all;
+						white-space: nowrap;
+						color: transparent;
+						border: 0;
+						text-indent: -9999px;
+					}
+					
+				}
+
+				.form-field-radio{
+					width:100%;
+					@include vw(margin-top,16px);
+					@include breakpoint(desktop){
+						@include vw(width,480px);
+						margin-top:0;
+					}
+				}
+
+				.form-field-list{
+					display:flex;
+					width:100%;
+					border:1px solid #DDDDDD;
+					@include vw(border-radius, 44px);
+					background-color:#fff;
+					li{
+						@extend %variable;
+						text-align:center;
+						
+
+						input[type="radio"] {
+							display:none;
+						  }
+						  
+						  input[type="radio"] + label span.round{
+							display:block;
+							@include vw(padding, 25px 0);
+							line-height:1;
+							color:#1E292D;
+							@include vw(font-size, 24px);
+							font-weight:700;
+							cursor:pointer;
+							@include breakpoint(maxMobile){
+								@include vw(padding, 15px 0);
+								@include vw(font-size, 14px);
+							}
+						  }
+						  
+						  input[type="radio"]:checked + label span.round {
+							background-color:#1E292D;
+							color:#fff;
+							@include vw(border-radius, 44px);
+						  }
+
+						a{
+							@include vw(padding, 15px 0);
+							display:block;
+							line-height:1;
+							color:#1E292D;
+							@include vw(font-size, 14px);
+							font-weight:700;
+						}
+
+						&:hover, &.active{
+							
+							a{
+								background-color:#1E292D;
+								color:#fff;
+								@include vw(border-radius, 44px);
+							}
+						}
+					}
+				}
+
+				.form-text{
+					color:#1E292D;
+					@include vw(font-size, 24px);
+					line-height:1.6;
+					font-weight:600;
+					@include vw(margin-top, 12px);
+					@include breakpoint(maxMobile){
+						@include vw(font-size, 14px);
+					}
+				}
+
+				.form-validation{
+					color:#777D80;
+					line-height:1.6;
+					font-weight:400;
+					@include vw(margin-top, 10px);
+					@include vw(font-size, 24px);
+					@include breakpoint(maxMobile){
+						@include vw(font-size, 14px);
+					}
+				}
+
+				.form-field-tab{
+					.tab-view{
+						display:none;
+						width:100%;
+					}
+
+					.tab-list{
+						display:none;
+						@include breakpoint(desktop){
+							display:flex;
+						}
+						width:100%;
+						border:1px solid #DDDDDD;
+						@include vw(border-radius, 88px);
+						background-color:#fff;
+						@include breakpoint(maxMobile){
+							@include vw(border-radius, 44px);
+						}
+						li{
+							
+							@extend %variable;
+							text-align:center;
+
+							a{
+								@include vw(padding, 25px 0);
+								display:block;
+								line-height:1;
+								color:#1E292D;
+								@include vw(font-size, 24px);
+								font-weight:900;
+								@include breakpoint(maxMobile){
+									@include vw(padding, 15px 0);
+									@include vw(font-size, 14px);
+								}
+								span{
+									display:inline-block;
+									@include vw(margin-right, 2px);
+								}
+							}
+
+							&:hover, &.active{
+								a{
+									background-color:#1E292D;
+									color:#fff;
+									@include vw(border-radius, 88px);
+									@include breakpoint(maxMobile){
+										@include vw(border-radius, 44px);
+									}
+								}
+							}
+						}
+
+
+
+						&+.tab-view{
+							display:block;
+						}
+					}
+
+					.tab-subject{
+						font-weight:700;
+						@include vw(font-size, 24px);
+						@include vw(margin-top, 16px);
+						@include breakpoint(maxMobile){
+							@include vw(font-size, 14px);
+						}
+					}
+
+					.tab-desc{
+						display:flex;
+						flex-wrap:wrap;
+						@include vw(margin-top, 12px);
+
+						li{
+							width:100%;
+							@include vw(font-size, 24px);
+							@include breakpoint(maxMobile){
+								width:50%;
+								@include vw(font-size, 14px);
+							}
+							line-height:1.6;
+							strong{
+								font-weight:700;
+							}
+						}
+					}
+
+				}
+
+				.form-input{
+					@include vw(margin-top, 12px);
+					width:100%;
+					@include breakpoint(desktop){
+						@include vw(width, 780px);
+					}
+				}
+				.form-textarea{
+					position:relative;
+					@include vw(margin-top, 16px);
+					width:100%;
+					textarea{
+						
+						background-color:#fff;
+						resize:none;
+						color:#8D9294;
+						@include vw(font-size,24px);
+						@include breakpoint(maxMobile){
+							@include vw(font-size,14px);
+							@include vw(height,120px);
+							@include vw(border-radius, 8px);
+						}
+						width:100%;
+						@include vw(border-radius, 16px);
+						@include vw(height,240px);
+						@include vw(padding, 16px);
+						font-family: $font-suit;
+						font-weight: 400;
+						border:1.5px solid #E2E2E9;
+
+						&::placeholder{
+							color:#8D9294;
+							@include vw(font-size,24px);
+							@include breakpoint(maxMobile){
+								@include vw(font-size,14px);
+							}	
+							font-family: $font-suit;
+							font-weight: 400;
+						}
+					}
+
+					.form-ta-counter{
+						position:absolute;
+						@include vw(right, 12px);
+						@include vw(bottom, 12px);
+						color:#A3A3A3;
+						text-align:right;
+						@include vw(font-size,24px);
+						@include breakpoint(maxMobile){
+							@include vw(font-size,12px);
+						}
+					}
+
+					
+				}
+
+			
+
+
+			}
+
+		}
+	}
+
+	#contents.page-login{
+		background-color:#1E292D;
+		height:100vh;
+		padding:0;
+		.wrap{
+			padding:0;
+		}
+		@include breakpoint(maxMobile){
+			background-color:#f3f3f3;
+		}
+
+		@include breakpoint(maxMobile){
+			@include vw(padding-top,80px);
+		}
+		
+		.login-wrap{
+			//@include vw(height, 760px);
+			@include bg($color: #1E292D, $url: '../img/common/bg_login.png', $position:0 0);
+			@include vw(padding, 64px 32px 64px);
+			
+			display:flex;
+			flex-wrap:wrap;
+			align-items: center;
+			justify-content: center;
+
+			@include breakpoint(maxMobile){
+				@include vw(height, 760px);
+				@include vw(border-radius, 24px);
+				@include vw(padding, 20px);
+			}
+
+			.login-title{
+				width:100%;
+				text-align:center;
+				img{
+					@include vw(width, 272px);
+				}
+
+				@include breakpoint(maxMobile){
+					width:50%;
+					img{
+						@include vw(width, 219px);
+					}
+				}
+			}
+
+			.login-form-box{
+				position:relative;
+				width:100%;
+				text-align:center;
+				background-color:#fff;			
+				@include vw(padding, 64px);
+				@include boxSizing(border-box);
+
+				@include vw(margin-top, 64px);
+				@include vw(height, 1038px);
+				@include vw(border-radius, 32px);
+				@include breakpoint(maxMobile){
+					width:50%;
+					margin-top:0;
+					height:100%;
+					@include vw(border-radius, 16px);
+				}
+			
+
+				.login-subject{
+					p{
+						font-weight:700;@include vw(margin-top, 20px);
+						line-height:1;
+						
+						span{@include vw(font-size, 28px);color:#00B1CC;}
+						strong{@include vw(font-size, 52px);color:#1E292D;}
+
+						@include breakpoint(maxMobile){
+							@include vw(margin-top, 10px);
+							span{@include vw(font-size, 16px);}
+							strong{@include vw(font-size, 32px);}
+						}
+
+						&:first-child{margin-top:0;}
+					}
+				}
+
+				.login-form-wrap{
+					@include vw(margin-top,90px);
+
+					.login-form-row{
+						& + .login-form-row {
+							@include vw(padding-top, 24px);
+						}
+
+						input[type="text"],
+						input[type="password"],
+						input[type="number"],
+						select{
+							@include vw(height, 112px);
+							@include vw(line-height, 112px);
+
+							@include breakpoint(maxMobile){
+								@include vw(height, 58px);
+								@include vw(line-height, 58px);
+							}
+							border:none;
+							border-bottom:1.5px solid #1E292D;
+							border-radius:0;
+							@include vw(padding,0 10px);
+							&::placeholder{
+								color: #1E292D;
+							}
+						}
+
+						select{font-weight:700;@include vw(padding-left, 10px);background-position:100% 50%;}
+
+					}
+				}
+
+				.login-action{
+					@include vw(margin-top, 64px);
+					@include breakpoint(maxMobile){
+						@include vw(margin-top, 48px);
+					}
+					a{
+						@include boxSizing(border-box);		
+						@include vw(width, 312px);
+						@include breakpoint(maxMobile){
+							@include vw(width, 160px);
+						}
+					}
+				}
+
+				.copyright{
+					position:absolute;left:0;width:100%;text-align:center;
+					@include vw(bottom, 24px);
+					color:#777D80;
+					@include vw(font-size, 20px);
+					@include breakpoint(maxMobile){
+						@include vw(font-size, 12px);
+					}
+				}
+
+			}
+		}
+	}
+
+}
