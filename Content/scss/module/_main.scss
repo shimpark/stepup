@@ -396,6 +396,8 @@
 				}
 
 				.form-select{
+					position:relative;
+					z-index:2;
 					width:100%;
 					@include vw(margin-bottom, 20px);
 					@include breakpoint(desktop){
@@ -460,6 +462,7 @@
 					}
 					@include breakpoint(desktop){
 						position:absolute;right:0;
+						z-index:1;
 						top:3px;
 						margin:0;
 						.btn-plus{
@@ -531,6 +534,8 @@
 				}
 
 				.form-field-radio{
+					position:relative;
+					z-index:2;
 					width:100%;
 					@include vw(margin-top,16px);
 					@include breakpoint(desktop){
@@ -617,6 +622,7 @@
 				}
 
 				.form-field-tab{
+					width:100%;
 					.tab-view{
 						display:none;
 						width:100%;
